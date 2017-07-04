@@ -1,4 +1,4 @@
-FROM fedora:21
+FROM fedora
 MAINTAINER xziped <xzip@mail.ownsync.at>
 
 ENV MMONIT_VERSION mmonit-3.7.1
