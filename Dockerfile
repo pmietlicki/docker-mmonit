@@ -29,9 +29,9 @@ USER $MMONIT_USER
 WORKDIR $MMONIT_ROOT
 
 # Download and install mmonit
-RUN wget https://mmonit.com/dist/$MMONIT_VERSION-linux-x64.tar.gz
-RUN tar -xf $MMONIT_ROOT/$MMONIT_VERSION-linux-x64.tar.gz && rm -rf $MMONIT_ROOT/$MMONIT_VERSION-linux-x64.tar.gz
-RUN mv $MMONIT_ROOT/$MMONIT_VERSION/* . && rm -rf $MMONIT_ROOT/$MMONIT_VERSION
+RUN wget https://mmonit.com/dist/${MMONIT_VERSION}-linux-x64.tar.gz
+RUN tar -xf $MMONIT_ROOT/${MMONIT_VERSION}-linux-x64.tar.gz && rm -rf $MMONIT_ROOT/${MMONIT_VERSION}-linux-x64.tar.gz
+RUN mv $MMONIT_ROOT/${MMONIT_VERSION}/* . && rm -rf $MMONIT_ROOT/$MMONIT_VERSION
 
 # Make config
 COPY ./monitrc $MMONIT_ROOT/conf/monitrc
