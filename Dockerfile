@@ -1,7 +1,7 @@
 FROM fedora
 MAINTAINER xziped <xzip@mail.ownsync.at>
 
-ENV MMONIT_VERSION mmonit-3.7.6
+ENV MMONIT_VERSION mmonit-3.7.7
 ENV MMONIT_USER monit
 ENV MMONIT_ROOT /opt/monit
 ENV MMONIT_BIN $MMONIT_ROOT/bin/mmonit
